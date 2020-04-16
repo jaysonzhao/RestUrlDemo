@@ -1,9 +1,6 @@
-sklearn
 flask
-arch
-matplotlib
+resteasy
 numpy
 pandas
-scipy
 connexion[swagger-ui]
 connexion
