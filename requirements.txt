@@ -1,5 +1,5 @@
 flask
-resteasy
+requests
 numpy
 pandas
 connexion[swagger-ui]

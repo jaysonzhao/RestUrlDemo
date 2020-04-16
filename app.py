@@ -3,15 +3,19 @@
 import connexion
 import numpy as np
 import socket
+import requests
+import os
 from connexion import NoContent
 
 # 计算平均值
 def post_mean(array: list):
     try:
-        # 求均值
-        calresult = np.mean(array)
-        return '{result}'.format(result=calresult)
-    except:
+        myurl = os.environ["MYURL"]
+        r = requests.get(myurl)
+        getresult = r.text
+        return '{result}'.format(result=getresult)
+    except Exception as inst:
+        print(inst)
         return NoContent, 404
 
 
