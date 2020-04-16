@@ -2,13 +2,8 @@
 
 import connexion
 import numpy as np
-import pandas as pd
 import socket
 from connexion import NoContent
-from arch import arch_model  # GARCH(1,1)
-from scipy import stats
-from dfa import dfa
-import scipy.signal as signal
 
 # 计算平均值
 def post_mean(array: list):
@@ -34,5 +29,5 @@ def post_std(array: list):
 if __name__ == '__main__':
     app = connexion.FlaskApp(__name__, port=8080, specification_dir='swagger/')
     hostname = socket.gethostname()
-    app.add_api('solarcalhub-api.yaml', arguments={'title': 'Solar Calculation Hub', 'host': hostname+':8080'})
+    app.add_api('demohub-api.yaml', arguments={'title': 'Solar Calculation Hub', 'host': hostname+':8080'})
     app.run()
