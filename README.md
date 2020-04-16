@@ -1,6 +1,6 @@
 # RestURLDemo
 
-export MYURL="..."
+export MYURL=http://.../.../..
 
 python app.py
 
