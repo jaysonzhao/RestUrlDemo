@@ -9,8 +9,8 @@ basePath: /app
 paths:
   /mean/{array}:
     post:
-      summary: 平均值
-      description: 平均值
+      summary: 发送请求
+      description: 发送请求
       operationId: app.post_mean
       produces:
       - text/plain;
@@ -30,27 +30,6 @@ paths:
         items:
           type: number
 
-  /std/{array}:
-    post:
-      summary: 标准差
-      description: 标准差
-      operationId: app.post_std
-      produces:
-      - text/plain;
-      responses:
-        200:
-          description: std response
-          schema:
-            type: number
-          examples:
-            "text/plain": "11.11"
-      parameters:
-      - name: array
-        in: path
-        description: array to calulate.
-        required: true
-        type: array
-        items:
-          type: number
+
 
   
