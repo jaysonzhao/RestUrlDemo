@@ -1,4 +1,3 @@
-anaconda-clean
 flask
 requests
 connexion[swagger-ui]
