@@ -4,14 +4,14 @@ info:
   title: "Demo Calculation Hub"
   version: "1.0"
 
-basePath: /app
+basePath: /appa
 
 paths:
   /mean/{array}:
     post:
       summary: 发送请求
       description: 发送请求
-      operationId: app.post_mean
+      operationId: appa.post_mean
       produces:
       - text/plain;
       responses:
