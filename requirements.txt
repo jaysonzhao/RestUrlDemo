@@ -2,3 +2,4 @@ flask
 requests
 connexion[swagger-ui]
 connexion
+gunicorn
